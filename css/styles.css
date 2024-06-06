@@ -1,0 +1,277 @@
+* {
+  background-color: white;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.05rem;
+  color: black;
+}
+
+h2 {
+  text-decoration: underline;
+  font-size: 1.7rem;
+  color: white;
+  background-color: rgb(180, 154, 154);
+  padding: 2rem;
+  text-align: center;
+}
+
+h3 {
+  text-align: left;
+  font-size: 1.4rem;
+}
+
+header {
+  display: flex;
+  background-color: #b59a9a;
+  margin-bottom: 23px;
+}
+
+.navHead {
+  background-color: rgb(181, 154, 154);
+  display: flex;
+}
+
+.navHead ul,
+a {
+  list-style-type: none;
+  justify-content: space-between;
+  text-decoration: none;
+  color: black;
+}
+
+/* funktioniert  nur minimal und verschwindet dann
+.navHead ul {
+  position: sticky;
+  top: 0;
+} */
+
+.breadcrumbs {
+  background-color: rgb(181, 154, 154);
+}
+
+.breadcrumbs li {
+  float: left;
+  background-color: rgb(181, 154, 154);
+}
+
+.breadcrumbs a {
+  display: block;
+  color: black;
+  padding: 12px;
+  margin: 5px;
+  border-radius: 4px;
+  font-size: 1.1rem;
+}
+
+li a:hover {
+  background-color: #6657576b;
+  color: white;
+  transition: 0.5s;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+}
+
+.introText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+.introText h1 {
+  font-size: 2.5rem;
+}
+
+.introText p {
+  hyphens: auto;
+  text-align: justify;
+}
+
+.introText ul {
+  background-color: rgb(181, 154, 154);
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.introText li {
+  padding: 15px;
+  list-style-type: none;
+}
+
+.profilepic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  border: white solid 10px;
+  border-radius: 40px;
+  /* padding: 20px; */
+}
+
+/* .active {
+  background-color: #04AA6D; funktioniert wenn sticky geht??
+} */
+
+#techIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+#techIcons h3 {
+  padding: 0 30px;
+}
+
+.techimg {
+  display: flex;
+  gap: 20px;
+  align-items: bottom;
+}
+
+/* #techIcons img {
+  padding-bottom: 30px;
+  /* align-items: center; geht nicht 
+} */
+
+.aboutme {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+
+.image-container {
+  position: relative;
+  width: 70%;
+  max-width: 700px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto; /* Maintains aspect ratio */
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  /*Centers the text vertically*/
+  left: 50%;
+  /* Centers the text horizontally */
+  transform: translate(-50%, -50%);
+  /* Ensures proper centering */
+  background-color: rgba(10, 9, 9, 0.554);
+  /* Semi-transparent background */
+  color: white;
+  letter-spacing: 12px;
+  font-weight: bold;
+  padding: 60px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 2.5rem;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.9s; /* Smooth transition */
+}
+
+.image-container:hover .text-overlay {
+  opacity: 1; /* Show on hover */
+}
+
+/* .aboutinfos {
+  border: black solid;
+  border-left: none;
+  border-radius: 8px;
+  background-color: rgb(181, 154, 154);
+} */
+
+.goals {
+  background: linear-gradient(to left, #b59a9a, transparent);
+  /* border: rgb(181, 154, 154) solid 2px; */
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.goals h3 {
+  background-color: transparent;
+  text-align: center;
+}
+
+.goals ul {
+  text-align: center;
+  background-color: transparent;
+}
+
+.goals li {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-color: transparent;
+  list-style-type: none;
+  padding: 20px;
+}
+
+.projectexamples {
+  display: flex;
+  justify-content: center;
+
+  padding: 100px;
+}
+
+.projectexamples h3,
+p {
+  text-align: center;
+}
+
+.projectexamples img {
+  width: 250px;
+  height: auto;
+  margin: 20px;
+  border: white solid;
+  border-radius: 8px;
+}
+
+.interacttiles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 100px;
+}
+
+.interacttiles h3 {
+  display: none;
+}
+
+.interacttiles img {
+  width: 150px;
+  height: auto;
+  max-width: 100%;
+  /* padding: 20px; */
+}
+
+.linkedin {
+  margin-left: 20px;
+}
+
+footer {
+  border: rgb(211, 202, 202) solid;
+  background-color: rgb(211, 202, 202);
+}
+
+footer li {
+  background-color: rgb(211, 202, 202);
+  list-style-type: none;
+  text-decoration: underline;
+  color: rgb(133, 132, 132);
+  text-align: center;
+}
+
+footer ul {
+  background-color: rgb(211, 202, 202);
+}

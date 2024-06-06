@@ -219,7 +219,6 @@ li a:hover {
 .projectexamples {
   display: flex;
   justify-content: center;
-
   padding: 100px;
 }
 
@@ -252,7 +251,6 @@ p {
   width: 150px;
   height: auto;
   max-width: 100%;
-  /* padding: 20px; */
 }
 
 .linkedin {

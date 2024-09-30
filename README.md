@@ -1,3 +1,6 @@
+# Take a look at the preview of my first website on vercel:
+https://personal-website-o9okmut5z-stephietacks-projects.vercel.app/
+
 # HTML and the web: Personal Website
 
 In this challenge you will start creating your own personal website.

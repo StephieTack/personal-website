@@ -7,6 +7,10 @@
   color: black;
 }
 
+h1 {
+  font-weight: bold;
+}
+
 h2 {
   text-decoration: underline;
   font-size: 1.7rem;
@@ -40,7 +44,7 @@ a {
   color: black;
 }
 
-/* funktioniert  nur minimal und verschwindet dann
+/* funktioniert derzeit nur minimal und verschwindet dann
 .navHead ul {
   position: sticky;
   top: 0;
@@ -83,8 +87,9 @@ li a:hover {
   padding: 100px;
 }
 
-.introText h1 {
+.myNameIs {
   font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .introText p {
